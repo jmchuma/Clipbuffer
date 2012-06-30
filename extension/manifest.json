@@ -1,0 +1,15 @@
+{
+  "background": {
+    "page": "bg.html"
+  },
+  "description" : "Stacks URLs in the clipboard",
+  "manifest_version": 2,
+  "name": "URL Stasher",
+  "offline_enabled": true,
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus"
+  ],
+  "version": "0.1"
+}
