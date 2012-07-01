@@ -18,6 +18,8 @@ Simple. After installing it just use the right click on whatever addess you want
 to copy and you should see a new entry in your contextual menu that looks like
 this:
 
+![Menu entry for links](https://dl.dropbox.com/u/5226030/Clipbuffer/linkMenu.png "Menu entry for links")
+
 You should click on that to add URLs to the clipboard without overwriting
 previous content stored in it. Any questions?
 
