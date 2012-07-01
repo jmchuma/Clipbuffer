@@ -1,9 +1,9 @@
 Clipbuffer for Google Chrome
 ============================
 
-A Google Chrome extension created to be able to use the "Copy link URL" many
-times without having go back and forth from your browser. It is implemented as
-context menus. This extension works on:
+A Google Chrome extension created to be able to add URLs from web pages content
+without overwriting the data on the cliboard. It is implemented as context
+menus. This extension works on:
 
 * Links
 * Images
@@ -20,14 +20,14 @@ this:
 
 ![Menu entry for links](https://dl.dropbox.com/u/5226030/Clipbuffer/linkMenu.png "Menu entry for links")
 
-You should click on that to add URLs to the clipboard without overwriting
-previous content stored in it. Any questions?
+Notice the _Add link to clipboard_ mennu? You should click on that to add URLs
+to the clipboard without overwriting previous content stored in it. Questions?
 
 **Q:** Yes. What if I just want to copy one URL?  
-**A:** Then you should use the _Copy URL_ functionality that comes with the browser.
+**A:** Then you should use the _Copy Link Address_ functionality that comes with the browser.
 
 **Q:** And if I already have stuff on the clipboard but I want a fresh start?  
-**A:** Use the _Copy URL_ functionality to add the first URL. After that just use
+**A:** Use the _Copy Link Address_ functionality to add the first URL. After that just use
 the entry provided by the extension.
 
 **Q:** How do I clean the clipboard after usage?  
