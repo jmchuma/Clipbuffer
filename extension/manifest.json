@@ -4,12 +4,12 @@
   },
   "description" : "Stacks URLs in the clipboard",
   "manifest_version": 2,
-  "name": "URL Stasher",
+  "name": "Clipbuffer",
   "offline_enabled": true,
   "permissions": [
     "clipboardRead",
     "clipboardWrite",
     "contextMenus"
   ],
-  "version": "0.1"
+  "version": "0.2"
 }

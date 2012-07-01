@@ -5,16 +5,6 @@
  */
 
 /**
- * Erase all content in clipboard
- */
-function emptyClipboard(info, tab) {
-  var urls = document.getElementById('urls');
-  urls.value = '';
-  urls.select();
-  document.execCommand('cut');
-}
-
-/**
  * Add url to stash
  */
 function addToStash(info, tab) {
@@ -24,31 +14,37 @@ function addToStash(info, tab) {
   document.execCommand('paste');
   // queue new URL
   urls.value = urls.value+'\n'+(info.linkUrl || info.srcUrl);
-  // paste to clipboard by cutting from textarea.
-  // This leaves a empty textare to use in emptyClipboard
+  // cut from textarea and paste to clipboard.
+  // I cut to empty the textarea.
   urls.select();
   document.execCommand('cut');
 }
 
-// URL stasher menu
-var rootMenu = chrome.contextMenus.create({
-  "title" : "URL stasher",
-  "type" : "normal",
-  "contexts" : ["audio","image","link","video"]
-});
-
-// Delete URL stash content
-var clearMenu = chrome.contextMenus.create({
-  "title" : "Clear clipboard",
-  "contexts" : ["audio","image","link","video"],
-  "onclick" : emptyClipboard,
-  "parentId": rootMenu
-});
-
-// Add to stahs
-var addMenu = chrome.contextMenus.create({
-  "title" : "Stash URL",
-  "contexts" : ["audio","image","link","video"],
+// Menu entry for audio
+var audioMenu = chrome.contextMenus.create({
+  "title" : "Add audio URL to clipboard",
+  "contexts" : ["audio"],
   "onclick" : addToStash,
-  "parentId": rootMenu
+});
+
+// Menu entry for images
+var imageMenu = chrome.contextMenus.create({
+  "title" : "Add image URL to clipboard",
+  "contexts" : ["image"],
+  "onclick" : addToStash,
+});
+
+// Menu entry for links
+var linkMenu = chrome.contextMenus.create({
+  "title" : "Add link to clipboard",
+  "contexts" : ["link"]
+  "onclick" : addToStash,
+});
+
+
+// Menu entry for video
+var videoMenu = chrome.contextMenus.create({
+  "title" : "Add image URL to clipboard",
+  "contexts" : ["video"],
+  "onclick" : addToStash,
 });
