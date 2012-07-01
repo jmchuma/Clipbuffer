@@ -37,7 +37,7 @@ var imageMenu = chrome.contextMenus.create({
 // Menu entry for links
 var linkMenu = chrome.contextMenus.create({
   "title" : "Add link to clipboard",
-  "contexts" : ["link"]
+  "contexts" : ["link"],
   "onclick" : addToStash,
 });
 
