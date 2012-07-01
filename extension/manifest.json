@@ -2,7 +2,8 @@
   "background": {
     "page": "bg.html"
   },
-  "description" : "Stacks URLs in the clipboard",
+  "default_locale": "en",
+  "description" : "__MSG_description__",
   "manifest_version": 2,
   "name": "Clipbuffer",
   "offline_enabled": true,
@@ -11,5 +12,5 @@
     "clipboardWrite",
     "contextMenus"
   ],
-  "version": "0.2"
+  "version": "0.3"
 }

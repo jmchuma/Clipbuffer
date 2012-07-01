@@ -22,29 +22,28 @@ function addToStash(info, tab) {
 
 // Menu entry for audio
 var audioMenu = chrome.contextMenus.create({
-  "title" : "Add audio URL to clipboard",
+  "title" : chrome.i18n.getMessage('audioMenu'),
   "contexts" : ["audio"],
   "onclick" : addToStash,
 });
 
 // Menu entry for images
 var imageMenu = chrome.contextMenus.create({
-  "title" : "Add image URL to clipboard",
+  "title" : chrome.i18n.getMessage('imageMenu'),
   "contexts" : ["image"],
   "onclick" : addToStash,
 });
 
 // Menu entry for links
 var linkMenu = chrome.contextMenus.create({
-  "title" : "Add link to clipboard",
+  "title" : chrome.i18n.getMessage('linkMenu'),
   "contexts" : ["link"],
   "onclick" : addToStash,
 });
 
-
 // Menu entry for video
 var videoMenu = chrome.contextMenus.create({
-  "title" : "Add image URL to clipboard",
+  "title" : chrome.i18n.getMessage('videoMenu'),
   "contexts" : ["video"],
   "onclick" : addToStash,
 });

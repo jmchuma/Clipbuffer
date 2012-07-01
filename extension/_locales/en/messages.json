@@ -1,0 +1,22 @@
+{
+  "audioMenu": {
+    "description": "Text for audio content.",
+	"message": "Add audio URL to clipboard"
+  },
+  "description": {
+    "description": "Extension's description.",
+	"message": "Copy URLs without overwiting the clipboard."
+  },
+  "imageMenu": {
+    "description": "Text for images.",
+	"message": "Add image URL to clipboard"
+  },
+  "linkMenu": {
+    "description": "Text for links.",
+	"message": "Add link to clipboard"
+  },
+  "videoMenu": {
+    "description": "Text for video content.",
+	"message": "Add video URL to clipboard"
+  }
+}
