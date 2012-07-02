@@ -12,8 +12,23 @@ function addToStash(info, tab) {
   urls.select();
   // paste previous content
   document.execCommand('paste');
-  // queue new URL
-  urls.value = urls.value+'\n'+(info.linkUrl || info.srcUrl);
+  // queue new content
+  switch(info.menuItemId) {
+    case audioMenu:
+    case imageMenu:
+    case videoMenu:
+      urls.value = urls.value+'\n'+info.srcUrl;
+      break;
+    case linkMenu:
+      urls.value = urls.value+'\n'+info.linkUrl;
+      break
+    case pageMenu:
+      urls.value = urls.value+'\n'+info.pageUrl;
+      break;
+    case selectionMenu:
+      urls.value = urls.value+'\n'+info.selectionText;
+      break;
+  }
   // cut from textarea and paste to clipboard.
   // I cut to empty the textarea.
   urls.select();
@@ -38,6 +53,20 @@ var imageMenu = chrome.contextMenus.create({
 var linkMenu = chrome.contextMenus.create({
   "title" : chrome.i18n.getMessage('linkMenu'),
   "contexts" : ["link"],
+  "onclick" : addToStash,
+});
+
+// Menu entry for video
+var pageMenu = chrome.contextMenus.create({
+  "title" : chrome.i18n.getMessage('pageMenu'),
+  "contexts" : ["page"],
+  "onclick" : addToStash,
+});
+
+// Menu entry for video
+var selectionMenu = chrome.contextMenus.create({
+  "title" : chrome.i18n.getMessage('selectionMenu'),
+  "contexts" : ["selection"],
   "onclick" : addToStash,
 });
 

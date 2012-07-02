@@ -9,6 +9,8 @@ menus. This extension works on:
 * Images
 * HTML5 audio tag
 * HTML5 video tag
+* Page URLs (see below)
+* Selected text
 
 All the URLs are added in a new line.
 
@@ -29,6 +31,9 @@ to the clipboard without overwriting previous content stored in it. Questions?
 **Q:** And if I already have stuff on the clipboard but I want a fresh start?  
 **A:** Use the _Copy Link Address_ functionality to add the first URL. After that just use
 the entry provided by the extension.
+
+**Q:** How do I add the URL of the page I'm on right now?  
+**A:** Just right click on anywhere aon the page and you should see and option for that.
 
 **Q:** How do I clean the clipboard after usage?  
 **A:** The same way you do it whenever you use the clipboard: just overwrite it with

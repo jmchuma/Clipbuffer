@@ -15,6 +15,14 @@
     "description": "Text for links.",
 	"message": "Add link to clipboard"
   },
+  "pageMenu": {
+    "description": "Text for the page.",
+	"message": "Add page URL to clipboard"
+  },
+  "selectionMenu": {
+    "description": "Text for text selection.",
+	"message": "Add selected text to clipboard"
+  },
   "videoMenu": {
     "description": "Text for video content.",
 	"message": "Add video URL to clipboard"
