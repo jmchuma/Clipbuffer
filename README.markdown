@@ -14,6 +14,8 @@ menus. This extension works on:
 
 All the URLs are added in a new line.
 
+Go to the ![Chrome Web Store](https://chrome.google.com/webstore/detail/kaljanbaemmkahepmddieipmafapobdb "Clipbuffer at Chrome Web Store") and get it!
+
 ## How do I use this thing?
 
 Simple. After installing it just use the right click on whatever addess you want
