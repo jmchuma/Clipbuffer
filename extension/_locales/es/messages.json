@@ -1,0 +1,30 @@
+{
+  "audioMenu": {
+    "description": "Texto para audio.",
+	"message": "Agregar enlace del audio al portapapeles"
+  },
+  "description": {
+    "description": "Descripción de la extensión.",
+	"message": "Copia URLs sin sobreecribir el portapateles."
+  },
+  "imageMenu": {
+    "description": "Texto para imágenes.",
+	"message": "Agregar URL de la imagen al portapapeles"
+  },
+  "linkMenu": {
+    "description": "Texto para enlaces.",
+	"message": "Agregar enlace al portapapeles"
+  },
+  "pageMenu": {
+    "description": "Texto para la página.",
+	"message": "Agregar dirección de la página al protapapeles"
+  },
+  "selectionMenu": {
+    "description": "Texto para texto seleccionado.",
+	"message": "Agregar selección al portapapeles"
+  },
+  "videoMenu": {
+    "description": "Texto para videos.",
+	"message": "Agregar URL del video al portapapeles"
+  }
+}
