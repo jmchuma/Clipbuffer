@@ -21,7 +21,7 @@
   },
   "selectionMenu": {
     "description": "Text for text selection.",
-	"message": "Add selected text to clipboard"
+	"message": "Add selection to clipboard"
   },
   "videoMenu": {
     "description": "Text for video content.",
